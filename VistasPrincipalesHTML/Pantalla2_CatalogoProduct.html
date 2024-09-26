@@ -1,0 +1,616 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Catálogo de productos
+    </title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/Pantalla2_CatalogoProduct.css">
+    <link rel="stylesheet" href="../styles/Pantalla9_Inventario.css">
+    <link rel="stylesheet" href="../styles/pagina_principal.css">
+
+</head>
+
+<body>
+    <header class="header-top">
+        Regístrate y obtén un 20% de descuento en tu primer compra. Regístrate ahora
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="../VistasPrincipalesHTML/index.html">
+                <img alt="Logo de la empresa" height="50" src="../Imagenes/LogoVivero.png" width="50" />
+            </a>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla2_CatalogoProduct.html">
+                            Catalogo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla4_Servicios.html">
+                            Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla7_PerfilUsuario.html">
+                            Perfil de usuario
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla8_Dashboard.html">
+                            Dashboard 
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input aria-label="Search" class="form-control me-2" placeholder="Buscar Productos" type="search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Buscar
+                    </button>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla6_CarritoCompras.html">
+                            <i class="fas fa-shopping-cart">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla5_Login.html">
+                            <i class="fas fa-user"></i>
+                            Iniciar Sesion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="sidebar">
+            <h3>
+                Filtros
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        Interior
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Exterior
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Suculentas
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Cactus
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Aromáticas
+                    </a>
+                </li>
+            </ul>
+            <div class="price-range">
+                <h3>
+                    Precio
+                </h3>
+                <input max="200" min="5" type="range" value="100" />
+                <div>
+                    $5.000 - $200.000
+                </div>
+            </div>
+            <div class="size-buttons">
+                <h3>
+                    Tamaño
+                </h3>
+                <button class="active">
+                    Pequeñas
+                </button>
+                <button>
+                    Medianas
+                </button>
+                <button>
+                    Grandes
+                </button>
+                <button>
+                    Extra Grandes
+                </button>
+            </div>
+            <div class="special-uses">
+                <h3>
+                    Usos Especiales
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Plantas para atraer polinizadores
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Repelentes de insectos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Plantas comestibles
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="apply-filter">
+                Aplicar filtro
+            </button>
+        </div>
+        <div class="product-list">
+            <h2>
+                Interior
+            </h2>
+            <a href="../VistasPrincipalesHTML/Pantalla3_ProductoDetalle.html">
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img alt="Aloe Vera" height="300"
+                            src="../Imagenes/ImagesPantalla2/Product1.2.png"
+                            width="300" />
+                        <h3>
+                            Aloe Vera
+                        </h3>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star-half-alt">
+                            </i>
+                            <i class="far fa-star">
+                            </i>
+                            3.5/5
+                        </div>
+                        <div class="price">
+                            $145
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img alt="Ficus Lyrata" height="300"
+                            src="../Imagenes/ImagesPantalla2/Product2.2.png"
+                            width="300" />
+                        <h3>
+                            Ficus Lyrata
+                        </h3>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star-half-alt">
+                            </i>
+                            <i class="far fa-star">
+                            </i>
+                            4.5/5
+                        </div>
+                        <div class="price">
+                            $180
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img alt="Collar de corazones" height="300"
+                            src="../Imagenes/ImagesPantalla2/Product3.2.png"
+                            width="300" />
+                        <h3>
+                            collar de corazones
+                        </h3>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+            <br>
+            <a href="../VistasPrincipalesHTML/Pantalla3_ProductoDetalle.html">
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img alt="Aloe Vera" height="300"
+                            src="../Imagenes/ImagesPantalla2/Product4.2.png"
+                            width="300" />
+                        <h3>
+                            Aloe Vera
+                        </h3>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star-half-alt">
+                            </i>
+                            <i class="far fa-star">
+                            </i>
+                            3.5/5
+                        </div>
+                        <div class="price">
+                            $145
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img alt="Ficus Lyrata" height="300"
+                            src="../Imagenes/ImagesPantalla2/Product5.2.png"
+                            width="300" />
+                        <h3>
+                            Ficus Lyrata
+                        </h3>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star-half-alt">
+                            </i>
+                            <i class="far fa-star">
+                            </i>
+                            4.5/5
+                        </div>
+                        <div class="price">
+                            $180
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img alt="Collar de corazones" height="300"
+                            src="../Imagenes/ImagesPantalla2/Product6.2.png"
+                            width="300" />
+                        <h3>
+                            collar de corazones
+                        </h3>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <h2>
+            MANTÉNGASE AL DÍA SOBRE NUESTRAS ÚLTIMAS OFERTAS
+        </h2>
+        <form>
+            <input placeholder="Introduce tu correo electrónico" type="email" />
+            <button>
+                Suscribirse
+            </button>
+        </form>
+    </div>
+    <footer>
+        <div class="column">
+            <a href="../VistasPrincipalesHTML/index.html">
+                <img alt="Logo de la tienda de jardinería" height="50" src="../Imagenes/LogoVivero.png" width="100" />
+            </a>
+            <p>
+                Ofrecemos plantas y servicios de jardinería que se adaptan a su estilo y necesidades. Desde plantas de
+                interior hasta herramientas y fertilizantes para su jardín.
+            </p>
+            <div class="social">
+                <a href="#">
+                    <i class="fab fa-facebook-f">
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter">
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin-in">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <h3>
+                NAVEGACIÓN
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        Plantas
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Herramientas
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Fertilizantes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Servicios
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>
+                AYUDA
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        Atención al cliente
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Detalles de envío
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Términos y condiciones
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Política de privacidad
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>
+                F.A.Q
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        Gestión de entregas
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Tipos de pedidos
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Métodos de pago
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Política de devoluciones
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>
+                RECURSOS
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Guías de compra
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Ofertas especiales
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Mapa del sitio
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+            <!-- <div class="newsletter">
+                <h2>
+                    MANTÉNGASE AL DÍA SOBRE NUESTRAS ÚLTIMAS OFERTAS
+                </h2>
+                <form>
+                    <input placeholder="Introduce tu correo electrónico" type="email" />
+                    <button>
+                        Suscribirse
+                    </button>
+                </form>
+            </div> -->
+            <!-- <br>
+            <footer>
+                <div class="column">
+                    <img alt="Logo de la tienda de jardinería" height="50"
+                        src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-ek4XSPHNf7nqwVZaT3yuemWS.png?st=2024-09-20T03%3A49%3A06Z&amp;se=2024-09-20T05%3A49%3A06Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-19T23%3A28%3A23Z&amp;ske=2024-09-20T23%3A28%3A23Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=X81tqsumRCP6%2BDhBI8oVqel/PQJRhiA8eUEqpxZhyaI%3D"
+                        width="100" />
+                    <p>
+                        Ofrecemos plantas y servicios de jardinería que se adaptan a su estilo y necesidades. Desde plantas de
+                        interior hasta herramientas y fertilizantes para su jardín.
+                    </p>
+                    <div class="social">
+                        <a href="#">
+                            <i class="fab fa-facebook-f">
+                            </i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter">
+                            </i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram">
+                            </i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>
+                        NAVEGACIÓN
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Plantas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Herramientas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Fertilizantes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Servicios
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>
+                        AYUDA
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Atención al cliente
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Detalles de envío
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Términos y condiciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Política de privacidad
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>
+                        F.A.Q
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Gestión de entregas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Tipos de pedidos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Métodos de pago
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Política de devoluciones
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>
+                        RECURSOS
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Guías de compra
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Ofertas especiales
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Mapa del sitio
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer> -->

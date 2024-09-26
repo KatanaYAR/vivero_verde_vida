@@ -1,0 +1,493 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Product Page
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../styles/Pantalla3_ProductoDetalle.css">
+  <link rel="stylesheet" href="../styles/Pantalla9_Inventario.css">
+ </head>
+ <body>
+    <header class="header-top">
+        Regístrate y obtén un 20% de descuento en tu primer compra. Regístrate ahora
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="../VistasPrincipalesHTML/index.html">
+                <img alt="Logo de la empresa" height="50" src="../Imagenes/LogoVivero.png" width="50" />
+            </a>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla2_CatalogoProduct.html">
+                            Catalogo
+                        </a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla4_Servicios.html">
+                            Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla7_PerfilUsuario.html">
+                            Perfil de usuario
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla8_Dashboard.html">
+                            Dashboard 
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input aria-label="Search" class="form-control me-2" placeholder="Buscar Productos" type="search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Buscar
+                    </button>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla6_CarritoCompras.html">
+                            <i class="fas fa-shopping-cart">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VistasPrincipalesHTML/Pantalla5_Login.html">
+                            <i class="fas fa-user"></i>
+                            Iniciar Sesion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <div class="container mt-5">
+   <div class="row">
+    <div class="col-md-6">
+     <div class="product-thumbnails">
+      <!-- <img alt="Thumbnail 1" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-xJIvt4FRhSNdIH9dONBeLKVu.png?st=2024-09-24T01%3A11%3A03Z&amp;se=2024-09-24T03%3A11%3A03Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A14%3A48Z&amp;ske=2024-09-24T23%3A14%3A48Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=uPFkGJcm6f9z60oB1N%2BZfHM0srKsYAjQ5DVwVrE/esQ%3D" width="100"/> -->
+      <!-- <img alt="Thumbnail 2" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-F01hICc3XQPlIpZBpRy7KeNu.png?st=2024-09-24T01%3A11%3A05Z&amp;se=2024-09-24T03%3A11%3A05Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A31%3A00Z&amp;ske=2024-09-24T23%3A31%3A00Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Lj2cqFb1bGIRd6yMXGBtc1zrJZqgfGffsJS%2BZKM%2BK6w%3D" width="100"/> -->
+      <!-- <img alt="Thumbnail 3" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-4XKL4YmzTdpWtlJVcDu9iKU3.png?st=2024-09-24T01%3A11%3A21Z&amp;se=2024-09-24T03%3A11%3A21Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A25%3A38Z&amp;ske=2024-09-24T23%3A25%3A38Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=BWJruXVJ7pYqJPyVjx0RgBuT469M1QBeTI4n2YOxyoo%3D" width="100"/> -->
+     </div>
+     <img alt="Main Product Image" class="product-image" height="500" src="../Imagenes/ImagesPantalla3../Image 6.png" width="500"/>
+    </div>
+    <div class="col-md-6 product-details">
+     <h1>
+      Aloe Vera
+     </h1>
+     <div class="rating">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star-half-alt">
+      </i>
+      4.5/5
+     </div>
+     <div class="price">
+      $260
+      <span class="old-price">
+       $300
+      </span>
+      <span class="discount">
+       -40%
+      </span>
+     </div>
+     <p>
+      Conocida por sus propiedades medicinales y su fácil mantenimiento.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="color">
+       Seleccionar color de la maceta
+      </label>
+      <div>
+       <button class="btn btn-outline-secondary">
+        <i class="fas fa-circle" style="color: #6c757d;">
+        </i>
+       </button>
+       <button class="btn btn-outline-secondary">
+        <i class="fas fa-circle" style="color: #6c757d;">
+        </i>
+       </button>
+       <button class="btn btn-outline-secondary">
+        <i class="fas fa-circle" style="color: #6c757d;">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="mb-3">
+      <label class="form-label" for="size">
+       Tamaño
+      </label>
+      <div>
+       <button class="btn btn-outline-secondary">
+        Pequeño
+       </button>
+       <button class="btn btn-outline-secondary">
+        Mediano
+       </button>
+       <button class="btn btn-black">
+        Grande
+       </button>
+       <button class="btn btn-outline-secondary">
+        Extra-Grande
+       </button>
+      </div>
+     </div>
+     <div class="mb-3">
+      <label class="form-label" for="quantity">
+       Cantidad
+      </label>
+      <div class="input-group">
+       <button class="btn btn-outline-secondary">
+        -
+       </button>
+       <input class="form-control" type="text" value="1"/>
+       <button class="btn btn-outline-secondary">
+        +
+       </button>
+      </div>
+     </div>
+     <button class="btn btn-black btn-lg">
+      Agregar a carrito
+     </button>
+    </div>
+   </div>
+  </div>
+  <div class="container related-products">
+   <h2>
+    Productos Relacionados
+   </h2>
+   <div class="row">
+    <div class="col-md-4">
+     <div class="card">
+      <div class="card-body">
+       <h5 class="card-title">
+        Monstera Deliciosa (Costilla de Adán)
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <p class="card-text">
+        Con sus hojas grandes y perforadas, esta planta añade un toque tropical y exótico a cualquier habitación. Es fácil de cuidar y puede crecer bastante, convirtiéndose en un punto focal impresionante.
+       </p>
+       <p class="card-text">
+        <small class="text-muted">
+         Posted on August 14, 2023
+        </small>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="card">
+      <div class="card-body">
+       <h5 class="card-title">
+        Ficus Lyrata (Higuera de Hoja de Violín)
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <p class="card-text">
+        Sus hojas grandes y en forma de violín son muy decorativas. Esta planta es ideal para espacios amplios y bien iluminados, y aporta un aire elegante y moderno.
+       </p>
+       <p class="card-text">
+        <small class="text-muted">
+         Posted on August 15, 2023
+        </small>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="card">
+      <div class="card-body">
+       <h5 class="card-title">
+        Aloe Vera
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star-half-alt">
+        </i>
+       </div>
+       <p class="card-text">
+        No solo conocida por sus propiedades medicinales, sino que también es una planta muy atractiva con sus hojas carnosas y puntiagudas. Es perfecta para aquellos que buscan un bajo mantenimiento.
+       </p>
+       <p class="card-text">
+        <small class="text-muted">
+         Posted on August 16, 2023
+        </small>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="card">
+      <div class="card-body">
+       <h5 class="card-title">
+        Pothos (Epipremnum aureum)
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <p class="card-text">
+        Con sus hojas en forma de corazón y su capacidad para crecer en casi cualquier condición, el Pothos es una opción versátil y hermosa. Además, es excelente para purificar el aire.
+       </p>
+       <p class="card-text">
+        <small class="text-muted">
+         Posted on August 17, 2023
+        </small>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="card">
+      <div class="card-body">
+       <h5 class="card-title">
+        Sansevieria (Lengua de Suegra)
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <p class="card-text">
+        Esta planta es extremadamente resistente y puede sobrevivir en condiciones de poca luz y con riego mínimo. Sus hojas verticales y puntiagudas añaden un toque moderno y estilizado.
+       </p>
+       <p class="card-text">
+        <small class="text-muted">
+         Posted on August 18, 2023
+        </small>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="card">
+      <div class="card-body">
+       <h5 class="card-title">
+        Calathea
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <p class="card-text">
+        Con sus hojas de patrones intrincados y colores vibrantes, la Calathea es una planta que llama la atención. Requiere un poco más de cuidado, pero su belleza vale la pena el esfuerzo.
+       </p>
+       <p class="card-text">
+        <small class="text-muted">
+         Posted on August 19, 2023
+        </small>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="text-center mt-4">
+    <button class="btn btn-outline-secondary">
+     Ver más coincidencias
+    </button>
+   </div>
+  </div>
+  <div class="container you-may-also-like">
+   <h2>
+    También te puede interesar
+   </h2>
+   <div class="row">
+    <div class="col-md-3">
+     <div class="card">
+      <img alt="Lengua de Suegra" class="card-img-top" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-pjntg31tKUeTvB0n0QUiiE7m.png?st=2024-09-24T01%3A11%3A13Z&amp;se=2024-09-24T03%3A11%3A13Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A32%3A48Z&amp;ske=2024-09-24T23%3A32%3A48Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=dFSisQB03PEWNX1S0z7EYPolOZmySRCMuR0HLIxIP30%3D" width="200"/>
+      <div class="card-body">
+       <h5 class="card-title">
+        Lengua de Suegra
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star-half-alt">
+        </i>
+        4.0/5
+       </div>
+       <p class="price">
+        $212
+        <span class="old-price">
+         $242
+        </span>
+        <span class="discount">
+         -20%
+        </span>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-3">
+     <div class="card">
+      <img alt="Aloe Vera" class="card-img-top" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-0H2OWXGcLjdb5UqihSA7IuAM.png?st=2024-09-24T01%3A11%3A09Z&amp;se=2024-09-24T03%3A11%3A09Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A14%3A17Z&amp;ske=2024-09-24T23%3A14%3A17Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=H8n9LgUAJKI/5egwXMKIWWdYqlFl7k6ePmq2ds6o1FY%3D" width="200"/>
+      <div class="card-body">
+       <h5 class="card-title">
+        Aloe Vera
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star-half-alt">
+        </i>
+        3.5/5
+       </div>
+       <p class="price">
+        $145
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-3">
+     <div class="card">
+      <img alt="Costilla de Adán" class="card-img-top" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-TCzKU6bjYCXzEL8Ila0LCtj5.png?st=2024-09-24T01%3A11%3A09Z&amp;se=2024-09-24T03%3A11%3A09Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A24%3A00Z&amp;ske=2024-09-24T23%3A24%3A00Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Kgv/VuVtE9rJHi3AC9CG5Y3vcx8jjRBi9UVQDRS4gG4%3D" width="200"/>
+      <div class="card-body">
+       <h5 class="card-title">
+        Costilla de Adán
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star-half-alt">
+        </i>
+        4.5/5
+       </div>
+       <p class="price">
+        $180
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-3">
+     <div class="card">
+      <img alt="Collar de corazones" class="card-img-top" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-lTuNtm29ypWWscAxRtZEH3CE.png?st=2024-09-24T01%3A11%3A06Z&amp;se=2024-09-24T03%3A11%3A06Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A15%3A38Z&amp;ske=2024-09-24T23%3A15%3A38Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=mLkFCsNqb/Pt3CV/sOsAPsHYtBEdH2ctQ6us%2B9UUMGQ%3D" width="200"/>
+      <div class="card-body">
+       <h5 class="card-title">
+        Collar de corazones
+       </h5>
+       <div class="rating">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        5.0/5
+       </div>
+       <p class="price">
+        $120
+        <span class="old-price">
+         $160
+        </span>
+        <span class="discount">
+         -30%
+        </span>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="newsletter">
+   <h2>
+    MANTÉNGASE AL DÍA SOBRE NUESTRAS ÚLTIMAS OFERTAS
+   </h2>
+   <form class="d-flex justify-content-center">
+   </form>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.navbar-brand img {
+    height: 50px;
+}
+.product-image {
+    width: 100%;
+    height: auto;
+}
+.product-thumbnails img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.product-details {
+    padding: 20px;
+}
+.product-details h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.product-details .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+.product-details .old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+.product-details .discount {
+    color: #ff0000;
+    font-weight: 700;
+}
+.product-details .rating {
+    color: #ffcc00;
+}
+.product-details .btn-black {
+    background-color: #000;
+    color: #fff;
+}
+.related-products, .you-may-also-like {
+    padding: 20px 0;
+}
+.related-products h2, .you-may-also-like h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.related-products .card, .you-may-also-like .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.related-products .card-body, .you-may-also-like .card-body {
+    padding: 20px;
+}
+.related-products .card-title, .you-may-also-like .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.related-products .card-text, .you-may-also-like .card-text {
+    font-size: 0.875rem;
+    color: #666;
+}
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+.footer .footer-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer .footer-link {
+    font-size: 0.875rem;
+    color: #666;
+    text-decoration: none;
+}
+.footer .footer-link:hover {
+    text-decoration: underline;
+}
+.footer .social-icons i {
+    font-size: 1.5rem;
+    color: #666;
+    margin-right: 10px;
+}
+.footer .social-icons i:hover {
+    color: #000;
+}
+.newsletter {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+.newsletter input {
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.newsletter button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

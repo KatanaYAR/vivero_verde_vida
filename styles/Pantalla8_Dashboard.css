@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.navbar-brand img {
+    height: 50px;
+}
+.navbar-nav .nav-link {
+    color: #000;
+    font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+    color: #28a745;
+}
+.navbar .form-control {
+    border-radius: 20px;
+}
+.navbar .btn {
+    border-radius: 20px;
+}
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+.breadcrumb-item a {
+    color: #6c757d;
+}
+.breadcrumb-item.active {
+    color: #000;
+}
+.dashboard-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #f8f9fa;
+    font-weight: 500;
+}
+.btn-custom {
+    border-radius: 20px;
+    font-weight: 500;
+}
+.btn-green {
+    background-color: #28a745;
+    color: #fff;
+}
+.btn-yellow {
+    background-color: #ffc107;
+    color: #fff;
+}
+.btn-red {
+    background-color: #dc3545;
+    color: #fff;
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+.footer a {
+    color: #fff;
+}
+.footer a:hover {
+    color: #28a745;
+}
+.footer .form-control {
+    border-radius: 20px;
+}
+.footer .btn {
+    border-radius: 20px;
+}
+.footer .social-icons i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.footer .payment-icons img {
+    height: 30px;
+    margin-right: 10px;
+}
